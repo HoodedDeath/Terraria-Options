@@ -93,14 +93,14 @@ namespace Terraria_Options
             try
             {
                 //Variables for the paths to each file
-                string hdFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "HoodedDeath");
+                string hdFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "HoodedDeathApplications");
                 string folder = Path.Combine(hdFolder, "Terraria Options");
                 string toFile = Path.Combine(folder, "Terraria Options.txt");
                 string readmeFile = Path.Combine(folder, "readme.txt");
-                //Makes sure the folder "HoodedDeath" exists in the roaming folder
+                //Makes sure the folder "HoodedDeathApplications" exists in the roaming folder
                 if (!Directory.Exists(hdFolder))
                     Directory.CreateDirectory(hdFolder);
-                //Makes sure the folder "Terraria Options" exists in the "HoodedDeath" folder
+                //Makes sure the folder "Terraria Options" exists in the "HoodedDeathApplications" folder
                 if (!Directory.Exists(folder))
                     Directory.CreateDirectory(folder);
                 //Writes the executable path into the "TO.txt" file by removing the file if it exists, then creating/re-creating the file, to avoid overwrite issues
